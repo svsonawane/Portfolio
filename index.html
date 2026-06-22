@@ -6,12 +6,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Snehal Sonawane — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18",
+    "react-dom": "https://esm.sh/react-dom@18",
+    "react-dom/client": "https://esm.sh/react-dom@18/client"
+  }
+}
+</script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
 </head>
 <body>
 <div id="root"></div>
-<script type="text/babel" data-presets="react" src="portfolio.jsx" charset="utf-8"></script>
+<script type="text/babel" data-presets="react" data-type="module" src="portfolio.jsx" charset="utf-8"></script>
 </body>
 </html>
