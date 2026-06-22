@@ -1,12 +1,12 @@
 const { useState, useEffect, useRef } = React;
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    YOUR DATA
-───────────────────────────────────────── */
+---------------------------------------- */
 const DATA = {
   name: "Snehal Sonawane",
   role: "Computer Engineer & Aspiring Data Scientist",
-  bio: "I build AI-powered tools, data pipelines, and interactive apps — from ML models to full-stack platforms. Currently open to exciting opportunities.",
+  bio: "I build AI-powered tools, data pipelines, and interactive apps - from ML models to full-stack platforms. Currently open to exciting opportunities.",
   email: "snehalsonawane984@gmail.com",
   resumeUrl: "#",
   social: {
@@ -43,7 +43,7 @@ const DATA = {
     {
       company: "WeDidIt",
       role: "Content Writing Intern",
-      period: "Feb 2025 – March 2025",
+      period: "Feb 2025 - March 2025",
       bullets: [
         "Wrote blogs, website copy, and social media content aligned with brand goals.",
         "Researched industry topics and produced engaging content for digital platforms.",
@@ -53,7 +53,7 @@ const DATA = {
     {
       company: "MiddleMen.Asia",
       role: "Content Writing Intern",
-      period: "Feb 2025 – March 2025",
+      period: "Feb 2025 - March 2025",
       bullets: [
         "Managed social media content and supported community engagement initiatives.",
         "Assisted with marketing campaigns to improve reach and audience growth.",
@@ -90,7 +90,7 @@ const DATA = {
     },
     {
       title: "SVAMITVA Drone Orthophoto",
-      description: "AI-Powered Object Detection for Drone Orthophotos — Smart India Hackathon 2024 Finalist project.",
+      description: "AI-Powered Object Detection for Drone Orthophotos - Smart India Hackathon 2024 Finalist project.",
       points: [
         "Real-time object detection using YOLOv8 on drone imagery to identify buildings, vehicles, trees, and water bodies.",
         "Supports multiple image formats with adjustable confidence thresholds and export to CSV, JSON, and Excel.",
@@ -129,7 +129,7 @@ const DATA = {
     },
     {
       title: "IndieCraft",
-      description: "Tech Pragryan — AVCOE Hackathon project celebrating and promoting indie artisans and local craft businesses.",
+      description: "Tech Pragryan - AVCOE Hackathon project celebrating and promoting indie artisans and local craft businesses.",
       points: [
         "Built a fully responsive web platform to showcase artisan products with a modern indie aesthetic.",
         "Developed as a hackathon submission highlighting UI/UX skills and rapid full-stack prototyping.",
@@ -184,21 +184,21 @@ const DATA = {
     {
       title: "SIH 2024 Finalist",
       event: "Smart India Hackathon 2024",
-      description: "Cleared internal rounds with the SVAMITVA Drone Orthophoto project — AI-powered object detection for government drone imagery.",
+      description: "Cleared internal rounds with the SVAMITVA Drone Orthophoto project - AI-powered object detection for government drone imagery.",
     },
     {
       title: "Hackathon Internal Round Clear",
-      event: "CircuLCA & GrainShieldPro — 2025",
+      event: "CircuLCA & GrainShieldPro - 2025",
       description: "Both CircuLCA and GrainShieldPro projects helped clear internal hackathon rounds, recognized for innovation in sustainability and agri-tech.",
     },
     {
       title: "Tech Pragryan Winner",
       event: "AVCOE Hackathon",
-      description: "Built IndieCraft — a platform for indie artisans — and won at the Tech Pragryan hackathon organized by AVCOE.",
+      description: "Built IndieCraft - a platform for indie artisans - and won at the Tech Pragryan hackathon organized by AVCOE.",
     },
     {
       title: "Data Science Intern",
-      event: "Netleap IT Training and Solutions — 2026",
+      event: "Netleap IT Training and Solutions - 2026",
       description: "Completed a Data Science internship building a healthcare insurance prediction model using Gradient Boosting, earning recognition for strong ML implementation.",
     },
   ],
@@ -206,30 +206,30 @@ const DATA = {
     {
       institution: "Amrutvahini College of Engineering",
       degree: "BE Computer",
-      period: "2023 – 2027",
-      gpa: "— / 10",
+      period: "2023 - 2027",
+      gpa: "- / 10",
       logo: "",
     },
     {
       institution: "Sahyadri Junior College",
       degree: "HSC",
-      period: "2020 – 2023",
-      gpa: "—",
+      period: "2020 - 2023",
+      gpa: "-",
       logo: "",
     },
     {
       institution: "Rasbihari International School",
       degree: "CBSE",
-      period: "2014 – 2020",
-      gpa: "—",
+      period: "2014 - 2020",
+      gpa: "-",
       logo: "",
     },
   ],
 };
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    ICONS
-───────────────────────────────────────── */
+---------------------------------------- */
 const IconGithub = ({ size = 20 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
     <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.161 22 16.416 22 12c0-5.523-4.477-10-10-10z"/>
@@ -277,9 +277,9 @@ const IconImage = () => (
   </svg>
 );
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    HOOKS
-───────────────────────────────────────── */
+---------------------------------------- */
 function useInView(threshold = 0.1) {
   const ref = useRef(null);
   const [inView, setInView] = useState(false);
@@ -293,9 +293,9 @@ function useInView(threshold = 0.1) {
   return [ref, inView];
 }
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    CSS
-───────────────────────────────────────── */
+---------------------------------------- */
 const CSS = `
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -518,9 +518,9 @@ const CSS = `
   @keyframes dotpulse { 0%,80%,100%{transform:scale(0.6);opacity:0.4} 40%{transform:scale(1);opacity:1} }
 `;
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    ANIMATED SECTION
-───────────────────────────────────────── */
+---------------------------------------- */
 function AnimSection({ id, children }) {
   const [ref, inView] = useInView();
   return (
@@ -530,9 +530,9 @@ function AnimSection({ id, children }) {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    NAVBAR
-───────────────────────────────────────── */
+---------------------------------------- */
 function Navbar() {
   const [hidden, setHidden] = useState(false);
   const [open, setOpen] = useState(false);
@@ -557,15 +557,15 @@ function Navbar() {
       </nav>
       <div className={`mobile-menu ${open ? "open" : ""}`}>
         {links.map(l => <a key={l} href={`#${l.toLowerCase()}`} onClick={close}>{l}</a>)}
-        <a href={DATA.resumeUrl} target="_blank" rel="noreferrer" onClick={close} style={{color:"#5ce1e6"}}>Resume ↗</a>
+        <a href={DATA.resumeUrl} target="_blank" rel="noreferrer" onClick={close} style={{color:"#5ce1e6"}}>Resume &gt; </a>
       </div>
     </>
   );
 }
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    HERO
-───────────────────────────────────────── */
+---------------------------------------- */
 function Hero() {
   const [visible, setVisible] = useState(false);
   useEffect(() => { setTimeout(() => setVisible(true), 100); }, []);
@@ -579,7 +579,7 @@ function Hero() {
         <p className={`hero-bio fade-up d2 ${visible?"visible":""}`}>{DATA.bio}</p>
         <div className={`hero-btns fade-up d3 ${visible?"visible":""}`}>
           <a href={DATA.social.github} target="_blank" rel="noreferrer" className="btn-primary">See My Work</a>
-          <a href={DATA.resumeUrl} target="_blank" rel="noreferrer" className="btn-ghost">Resume ↗</a>
+          <a href={DATA.resumeUrl} target="_blank" rel="noreferrer" className="btn-ghost">Resume &gt; </a>
         </div>
         <div className={`hero-social fade-up d4 ${visible?"visible":""}`}>
           <a href={DATA.social.github} target="_blank" rel="noreferrer"><IconGithub size={22}/></a>
@@ -592,9 +592,9 @@ function Hero() {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    EXPERIENCE
-───────────────────────────────────────── */
+---------------------------------------- */
 function Experience() {
   const [openIdx, setOpenIdx] = useState(null);
 
@@ -641,9 +641,9 @@ function Experience() {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    PROJECT CARD
-───────────────────────────────────────── */
+---------------------------------------- */
 function ProjectCard({ p }) {
   return (
     <div className="project-card">
@@ -674,9 +674,9 @@ function ProjectCard({ p }) {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    PROJECTS
-───────────────────────────────────────── */
+---------------------------------------- */
 function Projects() {
   return (
     <AnimSection id="projects">
@@ -690,9 +690,9 @@ function Projects() {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    ACHIEVEMENTS
-───────────────────────────────────────── */
+---------------------------------------- */
 function Achievements() {
   return (
     <AnimSection id="achievements">
@@ -712,9 +712,9 @@ function Achievements() {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    EDUCATION
-───────────────────────────────────────── */
+---------------------------------------- */
 function Education() {
   return (
     <AnimSection id="education">
@@ -745,9 +745,9 @@ function Education() {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    FOOTER
-───────────────────────────────────────── */
+---------------------------------------- */
 function Footer() {
   return (
     <footer id="contact">
@@ -766,9 +766,9 @@ function Footer() {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    LOADING
-───────────────────────────────────────── */
+---------------------------------------- */
 function Loading({ done }) {
   return (
     <div className={`loading ${done ? "fade" : ""}`}>
@@ -784,9 +784,9 @@ function Loading({ done }) {
   );
 }
 
-/* ─────────────────────────────────────────
+/* ----------------------------------------
    APP
-───────────────────────────────────────── */
+---------------------------------------- */
 function App() {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => { const t = setTimeout(() => setLoaded(true), 1000); return () => clearTimeout(t); }, []);
