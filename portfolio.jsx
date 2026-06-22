@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'https://esm.sh/react@18';
-import ReactDOM from 'https://esm.sh/react-dom@18/client';
+import React, { useState, useEffect, useRef } from 'react';
+import ReactDOM from 'react-dom/client';
 
 /* ----------------------------------------
    YOUR DATA
